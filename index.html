@@ -205,18 +205,16 @@
       margin-top: 48px;
     }
 
-    .screenshot-placeholder {
+    .screenshot-img {
       width: 160px;
-      height: 320px;
-      background: var(--border);
       border-radius: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.75rem;
-      color: var(--text-secondary);
-      font-weight: 500;
-      border: 1px solid #d5c5b8;
+      box-shadow: 0 8px 32px rgba(90, 57, 36, 0.18);
+      display: block;
+      object-fit: cover;
+    }
+
+    @media (max-width: 600px) {
+      .screenshot-img { width: 120px; border-radius: 14px; }
     }
 
     /* ── ABOUT ── */
@@ -380,12 +378,12 @@
       <div class="section-label">Screenshots</div>
       <h2 style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; letter-spacing: -0.02em; margin-top: 12px;">See it in action</h2>
       <div class="screenshots-row">
-        <div class="screenshot-placeholder">Map</div>
-        <div class="screenshot-placeholder">Café Detail</div>
-        <div class="screenshot-placeholder">Reviews</div>
-        <div class="screenshot-placeholder">Profile</div>
+        <img class="screenshot-img" src="./assets/images/Discover%20Cafes.png" alt="Discover Cafés" />
+        <img class="screenshot-img" src="./assets/images/Map.png" alt="Map" />
+        <img class="screenshot-img" src="./assets/images/Community%20Signals.png" alt="Community Signals" />
+        <img class="screenshot-img" src="./assets/images/Reviews.png" alt="Reviews" />
+        <img class="screenshot-img" src="./assets/images/Profile.png" alt="Profile" />
       </div>
-      <p style="margin-top: 24px; font-size: 0.8rem; color: var(--text-secondary);">Replace placeholders with your actual App Store screenshots.</p>
     </div>
   </div>
 
